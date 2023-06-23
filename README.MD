@@ -4,6 +4,6 @@ This project began as a Gadget for Microsoft Windows back when gadgets were a th
 
 If the momentum/trading volume of the security appear to support the suggested selling price, a decision could be made to take a position in the stock.
 
-NOTE: THIS TOOL DOES NOT SUGGEST TRADES NOR IS IT INTENDED TO PROVIDE ANY FINANCIAL ADVICE. CONSULT YOUR FINANCIAL PROFESSIONAL FOR TRADING AND INVESTING ADVICE.
+NOTE: THIS TOOL DOES NOT SUGGEST TRADES NOR IS IT INTENDED TO PROVIDE ANY FINANCIAL ADVICE. CONSULT YOUR FINANCIAL PROFESSIONAL FOR TRADING AND INVESTING ADVICE. THIS CODE IS PROVIDED AS IS WITHOUT WARRANTY.
 
 Although some of the original artifacts are still present in the project, the code no longer loads and runs as a gadget. It will however function as a HTML webpage.
