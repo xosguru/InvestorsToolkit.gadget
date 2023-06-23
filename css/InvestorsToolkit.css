@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    border: none;
+    width: 130;
+    height: 150;
+    font-family: 'Arial', Tahoma;
+    color: #000000;
+    cursor: default;
+    background-color: Transparent;
+}
+
+#mainForm{
+    padding: 5px 5px;
+    margin: 5px 5px;
+}
+
+.input-control{
+    padding: 5px 5px;
+    margin-bottom: 15px;
+}
+
+.label-control{
+    margin: 5px 5px;
+}
+
+.button-control{
+    padding: 10px 10px;
+    margin-bottom: 15px;
+    margin-left:80px;
+    color: #fff;
+    background-color:forestgreen;
+    border-style: none;
+    width:75px;
+}
+
+.button-control-reset{
+    padding: 10px 10px;
+    margin-bottom: 15px;
+    margin-left:80px;
+    color: #ccc;
+    background-color:#666;
+    border-style: none;
+    width:75px;
+}
+
+.image-button{
+    cursor:hand;
+}
