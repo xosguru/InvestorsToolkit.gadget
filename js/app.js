@@ -9,7 +9,7 @@ multiplier: 0,
 otherFees: 0,
 
 /*
-Persistence
+Persistence. Extracted from W3 Schools (https://www.w3schools.com/js/js_cookies.asp)
 */
     setCookie: function(cname, cvalue, exdays){
         const d = new Date();
@@ -36,8 +36,10 @@ Persistence
     },
     
     checkCookie: function(cookieName) {
+
+        // modified to return a boolean.
         let currentSettings = this.getCookie(cookieName);
-        if (currentSettings != "") {
+        if (currentSettings != "" || currentSettings != " ") {
             return true;
         } else {
             return false;
