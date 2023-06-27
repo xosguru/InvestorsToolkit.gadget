@@ -15,7 +15,7 @@ Persistence. Extracted from W3 Schools (https://www.w3schools.com/js/js_cookies.
         const d = new Date();
         d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
         let expires = "expires="+d.toUTCString();
-        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=./";
     },
 
     getCookie: function(cname) {
@@ -63,6 +63,7 @@ Persistence. Extracted from W3 Schools (https://www.w3schools.com/js/js_cookies.
 
         sellPrice = (buyPrice * multiplier) + buyCommission + sellCommission;
         sellPrice = parseFloat(sellPrice);
+
         if (isNaN(sellPrice)) { sellPrice = 0.00; }
 
         return sellPrice;
@@ -70,13 +71,14 @@ Persistence. Extracted from W3 Schools (https://www.w3schools.com/js/js_cookies.
 
     loadDefaults: function (){
 
-                var settingsString = App.getCookie("settings");
-                if(settingsString != ""){
-                var settings = JSON.parse(settingsString);
-                buyCommission = settings.buycommission;
-                sellCommission = settings.sellcommission;
-                multiplier = settings.multiplier;
-                otherFees = settings.otherfees;
+                var settingsString = this.getCookie("settings");
+                console.log(settingsString);
+                if(settingsString != "" || settingsString != " "){
+                    var settings = JSON.parse(settingsString);
+                    buyCommission = settings.buycommission;
+                    sellCommission = settings.sellcommission;
+                    multiplier = settings.multiplier;
+                    otherFees = settings.otherfees;
                 }
     }
 };
